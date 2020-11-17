@@ -62,7 +62,7 @@ while True:
 
 
 		# On déclare 3 variables avec 3 paramétres différents (l'éxpediteur, le destinataire et le sujet) + une variable de mdp
-		password = "F7jKDYPhcv5M2t6"
+		password = ""
 		msg['From'] = "pythontest3333@gmail.com"
 		msg['To'] = "kibidogi@gmail.com"
 		msg['Subject'] = dt_string + "Alerte Programme Capteur a planté"
