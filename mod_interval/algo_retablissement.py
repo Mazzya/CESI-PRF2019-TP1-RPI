@@ -39,9 +39,9 @@ else : # il affiche juste les données qu'il reçoit
 		elif temp >= 2400 and temp <= 3000: #si la temperature revient normal donc entre 24 - 30°C alors t'envoi un mail de rétablissement
 			msg = MIMEMultipart()
 			message = "Bonjour, le {}, le vivarium n°{} du magasin {} a détecté que la température est revenu a la normalité. Le capteur avec le numéro d'identification n°{} a une température qui est compris entre 24 - 30°C. La température du vivarium est actuellement de {} °C".format(dt_string, vivarium, animalerie, valeurId, temp)
-			password = "F7jKDYPhcv5M2t6"
+			password = ""
 			msg['From'] = "pythontest3333@gmail.com"
-			msg['To'] = "yahyamazouarenna@gmail.com"
+			msg['To'] = "pythontest3333@gmail.com"
 			msg['Subject'] = dt_string + " Rétablissement de la température"
 
 			msg.attach(MIMEText(message, 'plain'))
